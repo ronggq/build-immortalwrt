@@ -13,7 +13,7 @@ env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
   REPO_BRANCH: openwrt-21.02
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: .config
+  CONFIG_FILE: my.config
   TZ: Asia/Shanghai
   DEVICE: newifi3-d2
   UPLOAD_OUTPUT: true
