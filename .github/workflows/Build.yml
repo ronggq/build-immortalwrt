@@ -25,7 +25,7 @@ jobs:
       contents: write
 
     steps:
-    - name: 配置前置
+    - name: 配置
       uses: actions/checkout@master
     
     - name: 配置环境
@@ -86,7 +86,7 @@ jobs:
       uses: actions/upload-artifact@master
       if: env.UPLOAD_OUTPUT == 'true' && !cancelled()
       with:
-        name: Op-${{ env.DEVICE }}--${{ env.FILE_DATE }}
+        name: ${{ env.DEVICE }}--${{ env.FILE_DATE }}
         path: openwrt/bin
         
     - name: 整理输出文件
